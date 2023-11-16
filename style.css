@@ -272,16 +272,17 @@ img {
 
 
 main {
+ 
   background-color: #EEEBEB;
   padding: 10px;
   border-radius: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 344px;
+  margin-left: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
@@ -362,4 +363,54 @@ main {
 
 #resultado {
   margin-left: 344px;
+}
+
+
+/* Parte nova do quiz */
+
+
+
+.quiz-container {
+  width: 400px;
+  padding: 10px;
+  background-color: #e0b39e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px orangered;
+}
+
+.question-1 {
+  margin-bottom: 15px;
+}
+
+.la {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.in {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.but01 {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 190px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  
 }

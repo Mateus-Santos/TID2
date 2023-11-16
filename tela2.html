@@ -10,7 +10,7 @@
   <!-- Adicionando a fonte "Montserrat" -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-<body>
+<body class="tela-2">
 
           
           <!-- Barra de navegação -->
@@ -36,26 +36,54 @@
             </div>
           </nav>
 
-       <!-- <div id="formulario">
-            <p id="pergunta">Pergunta</p>
-            <p class="resposta">Resposta</p>
-            <p class="resposta">Resposta</p>
-            <p class="resposta">Resposta</p>
-        </div>
-        <p id="botao">Próximo</p>
-      -->
-             <h2 class="h2-ques">Questionário</h2>
+     
+             <div class="cont-div-form">
+
+              <h2 class="h2-ques">Questionário</h2>
              <main>
-          <div class="content">
-            <span class="spnQtd"></span>
-           <span class="question"></span>
-           <div class="answers"></div>
-          </div>
-          <div class="finish">
-           <span></span>
-          <button class="but-form">Reiniciar</button>
-          </div>
+              <div class="quiz-container">
+                <form id="quiz-form">
+                    <div class="question-1">
+                        <label class="la"  for="name">1. Insira seu nome:</label>
+                        <input class="in" type="text" id="name" required>
+                    </div>
+        
+                    <div class="question-1">
+                        <label class="la"  for="age">2. Insira sua idade:</label>
+                        <input class="in" type="number" id="age" required>
+                    </div>
+        
+                    <div class="question-1">
+                        <label class="la" for="sys-pressure">3. Pressão arterial sistólica:</label>
+                        <input class="in" type="number" id="sys-pressure" required>
+                    </div>
+        
+                    <div class="question-1">
+                        <label class="la"  for="dia-pressure">4. Pressão arterial diastólica:</label>
+                        <input class="in" type="number" id="dia-pressure" required>
+                    </div>
+        
+                    <div class="question-1">
+                        <label class="la" for="cholesterol">5. O nível do colesterol:</label>
+                        <input class="in" type="text" id="cholesterol" required>
+                    </div>
+        
+                    <div class="question-1">
+                        <label class="la" for="mmhg">6. mmHg:</label>
+                        <input class="in" type="number" id="mmhg" required>
+                    </div>
+        
+                    <div class="navigation">
+    
+                        <button class="but01" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        
+            
            </main>
+
+             </div>
   
            <script src="script.js" type="module"></script>
 
