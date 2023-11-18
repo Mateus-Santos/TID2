@@ -6,8 +6,16 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 @app.route('/')
+def principal():
+    return render_template('principal.html')
+
+@app.route('/formulario')
 def formulario():
-    return render_template('tela2.html')
+    return render_template('formulario.html')
+
+@app.route('/resultado')
+def resposta():
+    return render_template('resultado.html')
 
 @app.route('/processar', methods=['POST'])
 def processar_formulario():
@@ -33,7 +41,7 @@ def processar_formulario():
     
     resultado, indica = detectar_cardio([[idade,peso,sys_pressure,dia_pressure,cholesterol]])
 
-    return resultado
+    return resposta()
 
 if __name__ == '__main__':
     app.run(debug=True, port=9999)
