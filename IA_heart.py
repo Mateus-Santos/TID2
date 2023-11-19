@@ -12,8 +12,11 @@ from sklearn.metrics import accuracy_score, classification_report
 
 
 def resultado_arquivo(resultado):
+    exame = {
+        "resultado": int(resultado),
+    }
     with open('resultado_exame.json', 'w') as arquivo:
-        arquivo.write(str(resultado))
+        json.dump(exame, arquivo, indent=4)
 
     return resultado
 
@@ -76,6 +79,7 @@ def detectar_cardio(caracteristicas):
     }
 
     # Retorne o diagnóstico
+    resultado_arquivo(previsao[0])
     return mapeamento_classes[previsao[0]], previsao[0]
 
 #Idade, Peso, Pressão Arterial sistólica, Pressão arterial diastólica, colesterol
@@ -83,4 +87,3 @@ caracteristicas = [[25,90,200,200,90]]
 resultado, indica = detectar_cardio(caracteristicas)
 print(resultado)
 print(indica)
-resultado_arquivo(indica)
