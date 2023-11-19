@@ -14,12 +14,17 @@ def formulario():
     return render_template('formulario.html')
 
 @app.route('/resultado')
+
 def resposta():
+    with open('forms.json', 'r') as arquivo:
+        formulario = json.load(arquivo)
+
+    resultado, indica = detectar_cardio([[formulario['idade'],formulario['peso'],formulario['sys_pressure'],formulario['dia_pressure'],formulario['cholesterol']]])
+    print(resultado)
     return render_template('resultado.html')
 
 @app.route('/processar', methods=['POST'])
 def processar_formulario():
-    print("OK")
     nome = request.form['nome']
     idade = int(request.form['idade'])
     sys_pressure = int(request.form['sys_pressure'])
@@ -35,12 +40,8 @@ def processar_formulario():
         "dia_pressure": dia_pressure,
         "cholesterol": cholesterol,
     }
-
     with open('forms.json', 'w') as arquivo:
         json.dump(dados, arquivo, indent=4)
-    
-    resultado, indica = detectar_cardio([[idade,peso,sys_pressure,dia_pressure,cholesterol]])
-
     return resposta()
 
 if __name__ == '__main__':
