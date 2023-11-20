@@ -23,7 +23,7 @@ def resultado_arquivo(resultado):
 def detectar_cardio(caracteristicas):
 
     # Carregando o conjunto de dados da base cardiovascular.
-    df = pd.read_csv('cardio_train.csv', sep=';')
+    df = pd.read_csv('./cardio_train.csv', sep=';')
 
     # Ajustando os valores incorretos na base de dados
     for x in df['ap_hi'].unique():
