@@ -20,8 +20,11 @@ def resposta():
         formulario = json.load(arquivo)
 
     resultado, indica = detectar_cardio([[formulario['idade'],formulario['peso'],formulario['sys_pressure'],formulario['dia_pressure'],formulario['cholesterol']]])
-    print(resultado)
-    return render_template('resultado.html')
+    print(indica)
+    if(indica):
+        return render_template('resultado_positivo.html')
+    else:
+       return  render_template('resultado_negativo.html')
 
 @app.route('/processar', methods=['POST'])
 def processar_formulario():
