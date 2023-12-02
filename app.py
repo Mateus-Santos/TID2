@@ -7,6 +7,8 @@ from flask import Flask, request, render_template, jsonify
 
 app = Flask(__name__)
 processed_data = {}
+port1 = 9999
+endereco = 'http://127.0.0.1'
 
 @app.route('/')
 def principal():
@@ -16,9 +18,13 @@ def principal():
 def formulario():
     return render_template('formulario.html')
 
+@app.route('/equipe')
+def equipe():
+    return render_template('quem_somos.html')
+
 @app.route('/resultado', methods=['GET'])
 def tela_resultado():
-    response = requests.get('http://127.0.0.1:9999/export_json')
+    response = requests.get(f'{endereco}:{port1}/export_json')
     dados_json = response.json()
     resultado, indica = detectar_cardio([[dados_json.get('idade'),dados_json.get('peso'),dados_json.get('sys_pressure'),dados_json.get('dia_pressure'),dados_json.get('cholesterol')]])
     return render_template('resultado.html', resultado=resultado)
@@ -37,4 +43,4 @@ def processar_formulario():
     return tela_resultado()
 
 if __name__ == '__main__':
-    app.run(debug=True, port=9999)    
+    app.run(debug=True, port=port1)
