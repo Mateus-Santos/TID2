@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import json
 
 
 from sklearn import datasets
@@ -9,16 +8,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
-
-
-def resultado_arquivo(resultado):
-    exame = {
-        "resultado": int(resultado),
-    }
-    with open('resultado_exame.json', 'w') as arquivo:
-        json.dump(exame, arquivo, indent=4)
-
-    return resultado
 
 def detectar_cardio(caracteristicas):
 
@@ -77,9 +66,6 @@ def detectar_cardio(caracteristicas):
         0: 'Conforme análise, não temos ríscos de doenças cardíacas no momento.',
         1: 'Conforme análise, temos ríscos de doenças cardíacas.',
     }
-
-    # Retorne o diagnóstico
-    resultado_arquivo(previsao[0])
     return mapeamento_classes[previsao[0]], previsao[0]
 
 #Idade, Peso, Pressão Arterial sistólica, Pressão arterial diastólica, colesterol

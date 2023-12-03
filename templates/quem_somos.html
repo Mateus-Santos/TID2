@@ -1,90 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Quem Somos</title>
-  <!-- Adicionando os arquivos de CSS do Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Adicionando o arquivo de estilo personalizado -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Adicionando a fonte "Montserrat" -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
-<body> 
-          <!-- Barra de navegação -->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <!-- Logo da site -->
-              <a class="navbar-brand" href="tela1.html">Heaways <ol id="frase">Nunca é tarde para  manter a forma</ol></a>
-              <!-- Botão de menu (para dispositivos móveis) -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- Itens da barra de navegação -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ">
-                    <a class="nav-link" href="tela2.html">Aprenda conosco</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="quem_somos.html">Quem somos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          
+{% extends 'layout.html' %}
+{% block title %}Equipe{% endblock %}
+{% block equipe %}
           <section class="time">
             <h2 id="nossotime">Nosso time</h2> 
                 <div class="dep">
                   <div class="img-item">
-                    <img class="user" src="Hebert.jpg" alt="Hebert Silva">
+                    <img class="user" src="/static/imgs/Hebert.jpg" alt="Hebert Silva">
                     <h3>Hebert Silva</h3>
                 </div>
                 <div class="img-item">
-                  <img class="user" src="joao.jpg" alt="João Lucas">
+                  <img class="user" src="/static/imgs/joao.jpg" alt="João Lucas">
                   <h3>João Lucas</h3>
               </div>
               <div class="img-item">
-                <img class="user" src="Juliel.jpg" alt="Juliel Vieira">
+                <img class="user" src="/static/imgs/Juliel.jpg" alt="Juliel Vieira">
                 <h3>Juliel Vieira</h3>
               </div>
                               
                 
                 <div class="img-item">
-                    <img class="user" src="Matheus.jpg" alt="Matheus Santos">
-                    <h3>Matheus Santos</h3>
+                    <img class="user" src="/static/imgs/Matheus.jpg" alt="Matheus Santos">
+                    <h3>Mateus Santos</h3>
                 </div>
                 <div class="img-item">
-                  <img class="user" src="Patrick.jpg" alt="Patrick Souza">
+                  <img class="user" src="/static/imgs/Patrick.jpg" alt="Patrick Souza">
                   <h3>Patrick Souza</h3>
               </div>
                 <div class="img-item">
-                    <img class="user" src="Pedro.jpg" alt="Pedro Lima">
+                    <img class="user" src="/static/imgs/Pedro.jpg" alt="Pedro Lima">
                     <h3>Pedro Lima</h3>
                 </div>
                 
                 <div class="img-item">
-                    <img class="user" src="Ronaldo.jpeg" alt="Ronaldo Filho">
+                    <img class="user" src="/static/imgs/Ronaldo.jpeg" alt="Ronaldo Filho">
                     <h3>Ronaldo Filho</h3>
                 </div>
                 <div class="img-item">
-                  <img class="user" src="Stefhanyjpg.jpg" alt="Sthefane Caroline">
+                  <img class="user" src="/static/imgs/Stefhanyjpg.jpg" alt="Sthefane Caroline">
                   <h3>Sthefane Caroline</h3>
               </div>
-              
             </div>
-                    
                 </div>
             </div>
         </section>
-          
-
-         
-  
-  
-  
-          
-</body>
-</html>
+{% endblock %}
