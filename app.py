@@ -1,4 +1,3 @@
-import json
 import requests
 
 from IA_heart import detectar_cardio
