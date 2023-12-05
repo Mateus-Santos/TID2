@@ -71,5 +71,3 @@ def detectar_cardio(caracteristicas):
 #Idade, Peso, Pressão Arterial sistólica, Pressão arterial diastólica, colesterol
 caracteristicas = [[25,90,200,200,90]]
 resultado, indica = detectar_cardio(caracteristicas)
-print(resultado)
-print(indica)
