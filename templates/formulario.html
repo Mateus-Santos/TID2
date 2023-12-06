@@ -1,8 +1,9 @@
 {% extends 'layout.html' %}
 {% block title %}Formulário{% endblock %}
 {% block formulario %}
-        <h2 class="h2 h2-ques">Questionário</h2>
+        
         <div class="quiz-container">
+            <h2 class="h2 h2-ques">Questionário</h2>
           <form id="quiz-form" action="/processar" method="post">
               <div class="question-1">
                   <label class="la"  for="nome">1. Insira seu nome:</label>
@@ -45,5 +46,4 @@
       </div>
         </div>
       <script src="../static/js/script.js" type="module"></script>
-      <img class="backgroundi" src="../static/imgs/img03.jpg" alt="img03">
 {% endblock %}

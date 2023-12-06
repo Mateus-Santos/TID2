@@ -1,0 +1,197 @@
+@media only screen and (max-width: 896px) {
+
+    .btn-link{
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        top: 450px;
+        left: 20%;
+        border-radius: 50px;
+        font-family: 'Berlin Sans FB';
+        font-size: 50px;
+        background-image: linear-gradient(#ff7300, #d16207);
+        color: #fff;
+    }
+
+    .resposta {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-image: linear-gradient(#ffffff, #d1d1d1);
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+      }
+
+    .quiz-container {
+        position: absolute;
+        left: 18%;
+        top: 25%;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgb(255, 136, 0);
+        background-image: linear-gradient(#ffe7cf, #ffd4a9);
+        width: 70%;
+      }
+
+    .h2-ques {
+        color: black;
+        top: -10%;
+        left: 10%;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .principal {
+        background-color: #ffffffb2;
+        font-size: 33px;
+        text-align: left;
+        letter-spacing: -2px;
+        position: absolute;
+        top: 150px;
+        left: 70px;
+        font-family: 'Berlin Sans FB';
+        color: orangered;
+        width: 50%;
+      }
+}
+
+@media only screen and (max-width: 703px) {
+
+    .btn-link{
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        top: 450px;
+        left: 20%;
+        border-radius: 50px;
+        font-family: 'Berlin Sans FB';
+        font-size: 50px;
+        background-image: linear-gradient(#ff7300, #d16207);
+        color: #fff;
+    }
+
+    .quiz-container {
+        position: absolute;
+        left: 18%;
+        top: 25%;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgb(255, 136, 0);
+        background-image: linear-gradient(#ffe7cf, #ffd4a9);
+        width: 70%;
+    }
+
+    .h2-ques {
+        color: black;
+        top: -10%;
+        left: 10%;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .principal {
+        background-color: #ffffffb2;
+        font-size: 33px;
+        text-align: left;
+        letter-spacing: -2px;
+        position: absolute;
+        top: 150px;
+        left: 70px;
+        font-family: 'Berlin Sans FB';
+        color: orangered;
+        width: 70%;
+        -webkit-text-stroke-width: 1px; /* largura da borda */
+        -webkit-text-stroke-color: #000;
+      }
+
+      .resposta {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-image: linear-gradient(#ffffff, #d1d1d1);
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+      }
+}
+
+@media only screen and (max-width: 538px) {
+    .btn-link{
+        text-align: center;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        top: 450px;
+        left: 20%;
+        border-radius: 50px;
+        font-family: 'Berlin Sans FB';
+        font-size: 50px;
+        background-image: linear-gradient(#ff7300, #d16207);
+        color: #fff;
+    }
+
+    .quiz-container {
+        position: absolute;
+        left: 17%;
+        top: 25%;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgb(255, 136, 0);
+        background-image: linear-gradient(#ffe7cf, #ffd4a9);
+        width: 70%;
+      }
+
+    .h2-ques {
+        color: black;
+        top: -12%;
+        left: 10%;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    .principal {
+        background-color: #ffffffb2;
+        font-size: 30px;
+        text-align: left;
+        letter-spacing: -2px;
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        font-family: 'Berlin Sans FB';
+        color: orangered;
+        width: 85%;
+        -webkit-text-stroke-width: 1px; /* largura da borda */
+        -webkit-text-stroke-color: #000;
+      }
+
+    .principal h1 {
+        font-size: 40px;
+        -webkit-text-stroke-width: 2px; /* largura da borda */
+        -webkit-text-stroke-color: #000;
+    }
+
+    .resposta {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-image: linear-gradient(#ffffff, #d1d1d1);
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+      }
+
+}

@@ -1,13 +1,12 @@
 {% extends 'layout.html' %}
 {% block title %}Resultado{% endblock %}
 {% block resul %}
-             <h2 class="h2-res">Resultado</h2>
+             <h2 class="hs h2-ques">Resultado</h2>
              <main id="resultado">
                     <div class="resposta" id="resposta">
-                      {{ resultado }}
+                      {{ resultado }}</br>
+                      <a class="btn btn-primary" href="/formulario">Reiniciar</a>
                     </div>
-                    <a class="btn btn-primary" href="/formulario">Reiniciar</a>
               </main>
            <script src="../static/js/script.js"></script>
-           <img class="backgroundi" id="img02" src="../static/imgs/img02.jpg" alt="img01">
 {% endblock %}
