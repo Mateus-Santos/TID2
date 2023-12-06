@@ -44,5 +44,9 @@ def processar_formulario():
     jsonify(data), 302, {'Location': '/export_json'}
     return tela_resultado()
 
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
 if __name__ == '__main__':
     app.run(port=port1, host=endereco)
