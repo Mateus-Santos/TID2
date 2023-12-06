@@ -1,46 +1,79 @@
 {% extends 'layout.html' %}
 {% block title %}Equipe{% endblock %}
 {% block equipe %}
-          <section class="time">
-            <h2 id="nossotime">Nosso time</h2> 
-                <div class="dep">
-                  <div class="img-item">
-                    <img class="user" src="/static/imgs/Hebert.jpg" alt="Hebert Silva">
-                    Hebert Silva
-                </div>
-                <div class="img-item">
-                  <img class="user" src="/static/imgs/joao.jpg" alt="João Lucas">
-                  João Lucas
-              </div>
-              <div class="img-item">
-                <img class="user" src="/static/imgs/Juliel.jpg" alt="Juliel Vieira">
-                Juliel Vieira
-              </div>
-                              
-                
-                <div class="img-item">
-                    <img class="user" src="/static/imgs/Matheus.jpg" alt="Mateus Santos">
-                    Mateus Santos
-                </div>
-                <div class="img-item">
-                  <img class="user" src="/static/imgs/Patrick.jpg" alt="Patrick Souza">
-                  Patrick Souza
-              </div>
-                <div class="img-item">
-                    <img class="user" src="/static/imgs/Pedro.jpg" alt="Pedro Lima">
-                    Pedro Lima
-                </div>
-                
-                <div class="img-item">
-                    <img class="user" src="/static/imgs/Ronaldo.jpeg" alt="Ronaldo Filho">
-                    Ronaldo Filho
-                </div>
-                <div class="img-item">
-                  <img class="user" src="/static/imgs/Stefhanyjpg.jpg" alt="Sthefane Caroline">
-                  Sthefane Caroline
-              </div>
+      <h2 id="nossotime">Nosso time</h2> 
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Hebert.jpg" alt="Hebert Silva" />
+            <div class="card-body">
+              <h5 class="card-title">Hebert Silva</h5>
             </div>
-                </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/joao.jpg" alt="João Lucas" />
+            <div class="card-body">
+              <h5 class="card-title">João Lucas</h5>
             </div>
-        </section>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Juliel.jpg" alt="Juliel Vieira" />
+            <div class="card-body">
+              <h5 class="card-title">Juliel Vieira</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Mateus.jpg" alt="Mateus Santos" />
+            <div class="card-body">
+              <h5 class="card-title">Mateus Santos</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Patrick.jpg" alt="Patrick Souza" />
+            <div class="card-body">
+              <h5 class="card-title">Patrick Souza</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Pedro.jpg" alt="Pedro Lima" />
+            <div class="card-body">
+              <h5 class="card-title">Pedro Lima</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Ronaldo.jpeg" alt="Ronaldo Filho" />
+            <div class="card-body">
+              <h5 class="card-title">Ronaldo Filho</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="/static/imgs/Stefhanyjpg.jpg" alt="Sthefane Caroline" />
+            <div class="card-body">
+              <h5 class="card-title">Sthefane Caroline</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 {% endblock %}
