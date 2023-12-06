@@ -3,24 +3,22 @@ body {
   color: black;
 }
 
+.logo{
+  max-width: 250px;
+  max-height: 250px;
+}
 
 /* Estilo personalizado para o conteúdo da página */
 .container {
   font-family: 'Berlin Sans FB';
   color: orangered;
-  
 }
 
 
 /* Estilo personalizado para a barra de navegação */
 .navbar-brand {
   color: #f1331b;
-  font-size: 35px;
-  font-weight: bold;
   font-family: 'Berlin Sans FB';
-  margin-left: 70px;
-  margin-bottom: -30px;
-  margin-top: 0px;
   box-shadow: 0 0 10 rgb(0, 0, 0);
   -webkit-text-stroke-width: 1px; /* largura da borda */
   -webkit-text-stroke-color: #000000; /* cor da borda */
@@ -34,7 +32,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-  font-size: 25px;
+  font-size: 30px;
   color: #ff3c00;
   font-family: 'Berlin Sans FB';
 }
@@ -73,7 +71,7 @@ p {
 
 
 .nav-item {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
 }
 
@@ -134,6 +132,10 @@ img {
 
 
 .resposta {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  font-size: 25px;
   margin-left: 40px;
   margin-right: 40px;
   background-color: white;

@@ -6,8 +6,8 @@ from flask import Flask, request, render_template, jsonify
 
 app = Flask(__name__)
 processed_data = {}
-port1 = 9999
-endereco = 'http://127.0.0.1'
+port1 = 5000
+endereco = 'http://192.168.62.3'
 
 @app.route('/')
 def principal():
